@@ -11,8 +11,7 @@
   - [Example Usage](#example-usage)
 - [Machine Learning Model](#machine-learning-model)
 - [API Documentation](#api-documentation)
-- [Contributing](#contributing)
-- [License](#license)
+
 
 
 ## Project Description
@@ -32,7 +31,8 @@ The Diabetes Prediction API is a machine learning project that predicts diabetes
 
 
 - Python 3.8+
-- 
+- django
+- django rest-framework
 
 ### Installation
 
@@ -41,9 +41,18 @@ The Diabetes Prediction API is a machine learning project that predicts diabetes
    ```bash
    git clone  https://github.com/Tuntufye4/Diabetes-Prediction-API.git
 
-2. Start the development server:
+## Usage
+
+1. Start the development server:
 
    ```bash
    python manage.py runserver
+
+## Machine Learning Model
+
+
+## API Documentation
+
+
 
  
