@@ -40,4 +40,10 @@ The Diabetes Prediction API is a machine learning project that predicts diabetes
 
    ```bash
    git clone  https://github.com/Tuntufye4/Diabetes-Prediction-API.git
+
+2. Start the development server:
+
+   ```bash
+   python manage.py runserver
+
  
