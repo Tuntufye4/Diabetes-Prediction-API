@@ -10,7 +10,7 @@
 - [Usage](#usage)
   - [Example Usage](#example-usage)
 - [Machine Learning Model](#machine-learning-model)
-- [API Documentation](#api-documentation)
+
 
 
 
@@ -33,6 +33,8 @@ The Diabetes Prediction API is a machine learning project that predicts diabetes
 - Python 3.8+
 - django
 - django rest-framework
+- Scickit-learn
+- httpie 
 
 ### Installation
 
@@ -41,17 +43,58 @@ The Diabetes Prediction API is a machine learning project that predicts diabetes
    ```bash
    git clone  https://github.com/Tuntufye4/Diabetes-Prediction-API.git
 
+## Machine Learning Model
+
 ## Usage
+
+### Example Usage
 
 1. Start the development server:
 
    ```bash
    python manage.py runserver
 
-## Machine Learning Model
+2. Create an input.json file
+
+   example:
+   ```bash
+
+   {
+    "input_data": [0.025, 0.04, 0.106, 0.215, -0.4612, -0.712, 0.539, -0.036, 0.128, 0.781]
+   }
 
 
-## API Documentation
+4. Use the below command to add input
+
+   ```bash
+  http POST http://localhost:8000/api/predict/ < input.json
+
+
+4. The command above should give you this output:
+
+   ```bash
+
+  HTTP/1.1 200 OK
+Allow: POST, OPTIONS
+Content-Length: 36
+Content-Type: application/json
+Cross-Origin-Opener-Policy: same-origin
+Date: Tue, 03 Oct 2023 15:39:36 GMT
+Referrer-Policy: same-origin
+Server: WSGIServer/0.2 CPython/3.8.0
+Vary: Cookie
+X-Content-Type-Options: nosniff
+X-Frame-Options: DENY
+
+{
+    "predicted_value": 546.027883704299
+}  
+
+   
+
+
+
+
 
 
 
