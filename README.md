@@ -64,31 +64,31 @@ The Diabetes Prediction API is a machine learning project that predicts diabetes
    }
 
 
-4. Use the below command to add input
+4. Run the below command in httpie to add the input json file
 
    ```bash
-  http POST http://localhost:8000/api/predict/ < input.json
+   http POST http://localhost:8000/api/predict/ < input.json
 
 
 4. The command above should give you this output:
 
    ```bash
 
-  HTTP/1.1 200 OK
-Allow: POST, OPTIONS
-Content-Length: 36
-Content-Type: application/json
-Cross-Origin-Opener-Policy: same-origin
-Date: Tue, 03 Oct 2023 15:39:36 GMT
-Referrer-Policy: same-origin
-Server: WSGIServer/0.2 CPython/3.8.0
-Vary: Cookie
-X-Content-Type-Options: nosniff
-X-Frame-Options: DENY
+   HTTP/1.1 200 OK
+   Allow: POST, OPTIONS
+   Content-Length: 36
+   Content-Type: application/json
+   Cross-Origin-Opener-Policy: same-origin
+   Date: Tue, 03 Oct 2023 15:39:36 GMT
+   Referrer-Policy: same-origin
+   Server: WSGIServer/0.2 CPython/3.8.0
+   Vary: Cookie
+   X-Content-Type-Options: nosniff
+   X-Frame-Options: DENY
 
-{
-    "predicted_value": 546.027883704299
-}  
+   {
+     "predicted_value": 546.027883704299
+   }  
 
    
 
