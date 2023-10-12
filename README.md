@@ -64,7 +64,7 @@ The Diabetes Prediction API is a machine learning project that predicts diabetes
    }
 
 
-4. Run the below command in httpie to add the input json file
+4. Run the below command to add the input json file (input features)
 
    ```bash
    http POST http://localhost:8000/api/predict/ < input.json
