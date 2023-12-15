@@ -87,7 +87,7 @@ The Diabetes Prediction API is a machine learning project that predicts diabetes
    X-Frame-Options: DENY
 
    {
-     "predicted_value": 546.027883704299
+     "predicted_value": 
    }  
 
    
